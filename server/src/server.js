@@ -4,7 +4,8 @@ const morgan = require('morgan');
 
 const config = require('./config');
 const db = require('./db');
-const memberControllers = require('./entities/member/member.controllers');
+const membersRouter = require('./entities/member/member.router');
+const eventsRouter = require('./entities/event/event.router');
 
 const app = express();
 
@@ -12,8 +13,8 @@ app.use(cors());
 app.use(express.json());
 app.use(morgan('dev'));
 
-app.get('/members', memberControllers.getMany);
-app.post('/members', memberControllers.createOne);
+app.use('/members', membersRouter);
+app.use('/events', eventsRouter);
 
 const startServer = async () => {
   try {
