@@ -1,3 +1,5 @@
+require('dotenv').config(); 
+
 const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan');
@@ -20,7 +22,7 @@ const startServer = async () => {
   try {
     await db.connect();
     app.listen(config.port, () => {
-      console.log(`Event API listening on port ${config.port}`);
+      console.log(`Events API listening on port ${config.port}`);
     });  
   } catch (e) {
     console.log(e);

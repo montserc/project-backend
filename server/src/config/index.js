@@ -1,14 +1,21 @@
+const checkEnvVar = (name) => {
+  if (name in process.env) {
+    return process.env[name];
+  }
+  throw new Error(`Missing environment variable ${name}`);
+};
+
 module.exports = {
-  port: 8888,
+  port: checkEnvVar("SERVER_PORT"),
   dbConnexion: {
-    user: 'admin',
-    password: 'fullstack',
-    host: 'localhost',
-    port: 27017,
-    db: 'eventsite'
+    host: checkEnvVar("DB_HOST"),
+    port: checkEnvVar("DB_PORT"),
+    user: checkEnvVar("DB_USER"),
+    password: checkEnvVar("DB_PASSWORD"),
+    db: checkEnvVar("DB_DATABASE"),
   },
   mongoUrl() {
     const { user, password, host, port, db } = this.dbConnexion;
     return `mongodb://${user}:${password}@${host}:${port}/${db}?authSource=admin`;
   }
-}
+};
