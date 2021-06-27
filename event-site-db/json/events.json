@@ -1,0 +1,82 @@
+[{
+  "_id": {
+    "$oid": "60c78e9421865e0545432a96"
+  },
+  "guestsMembers": [
+    {
+      "$oid": "60c8c11fb147f2053c5e6178"
+    },
+    {
+      "$oid": "60c718ab6eede3044d323999"
+    }
+  ],
+  "hostMember": {
+    "$oid": "60c71220b36c8a03382d9d44"
+  },
+  "name": "Scattergories",
+  "description": "¡Vamos a jugar al Scattergories! El objetivo del juego es conseguir el mayor número de puntos. Nos lo pasaremos genial",
+  "status": "draft",
+  "startTime": {
+    "$date": "2021-07-16T16:30:00Z"
+  },
+  "endTime": {
+    "$date": "2021-07-16T18:30:00Z"
+  },
+  "location": "online",
+  "limit": 10,
+  "complete": false,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60c799beb602eb061a5d197f"
+  },
+  "guestsMembers": [
+    {
+      "$oid": "60c71220b36c8a03382d9d44"
+    },
+    {
+      "$oid": "60c8c11fb147f2053c5e6178"
+    }
+  ],
+  "hostMember": {
+    "$oid": "60c718ab6eede3044d323999"
+  },
+  "name": "YOGA outside/aire libre en Montjuïc!",
+  "description": "Clases de Ashtanga modificado, adaptadas a todos los niveles, con variaciones y modificaciones para cada uno/a.",
+  "status": "proposed",
+  "startTime": {
+    "$date": "2021-07-11T09:30:00Z"
+  },
+  "endTime": {
+    "$date": "2021-07-11T11:30:00Z"
+  },
+  "location": "Montjuïc",
+  "limit": 8,
+  "complete": false,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60d851d23366680289d1ed39"
+  },
+  "guestsMembers": [
+    {
+      "$oid": "60c8c11fb147f2053c5e6178"
+    }
+  ],
+  "hostMember": {
+    "$oid": "60c71220b36c8a03382d9d44"
+  },
+  "name": "Excursión a los bosques de robles de Camprodón",
+  "description": "Esta ruta es espectacular y fresca entre robles de más de 200 años, una de las joyas forestales de Cataluña. La ruta empieza desde el mismo pueblo de Camprodon, el cual visitaremos.",
+  "location": "Sant Andreu Arenal",
+  "status": "proposed",
+  "startTime": {
+    "$date": "2021-07-03T05:45:00Z"
+  },
+  "endTime": {
+    "$date": "2021-07-03T17:30:00Z"
+  },
+  "limit": 20,
+  "complete": false,
+  "__v": 0
+}]

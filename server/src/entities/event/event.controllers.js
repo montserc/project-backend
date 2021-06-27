@@ -79,19 +79,18 @@ const createOneGuestMember = async (req, res) => {
       return res
         .status(404)
         .json({ error: `Member with id ${req.params.member} not found` });
-    } else {
-      const doc = await Event.findOneAndUpdate(
-        { _id: req.params.id },
-        { $addToSet: { guestsMembers: req.params.member } },
-        { new: true, }
-      )
-        .lean()
-        .exec();
-      if (!doc) {
-        return res
-          .status(404)
-          .json({ error: `Event with id ${req.params.id} not found` });
-      }
+    }
+    const doc = await Event.findOneAndUpdate(
+      { _id: req.params.id },
+      { $addToSet: { guestsMembers: req.params.member } },
+      { new: true }
+    )
+      .lean()
+      .exec();
+    if (!doc) {
+      return res
+        .status(404)
+        .json({ error: `Event with id ${req.params.id} not found` });
     }
     res.status(200).json({ results: doc });
   } catch (e) {

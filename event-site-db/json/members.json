@@ -1,0 +1,74 @@
+[{
+  "_id": {
+    "$oid": "60c71220b36c8a03382d9d44"
+  },
+  "topics": [
+    "leer",
+    "senderismo",
+    "juegos de mesa"
+  ],
+  "name": {
+    "first": "Mariona",
+    "last": "Edo Martínez"
+  },
+  "birthday": {
+    "$date": "1971-10-10T00:00:00Z"
+  },
+  "email": "medo@gmail.com",
+  "gender": "female",
+  "createdAt": {
+    "$date": "2021-06-14T08:24:00.379Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-27T09:10:02.293Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60c718ab6eede3044d323999"
+  },
+  "topics": [
+    "escribir",
+    "senderismo"
+  ],
+  "name": {
+    "first": "Kim",
+    "last": "Linares Puertas"
+  },
+  "birthday": {
+    "$date": "1974-01-06T00:00:00Z"
+  },
+  "email": "klinares@gmail.com",
+  "gender": "male",
+  "createdAt": {
+    "$date": "2021-06-14T08:51:55.363Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-27T09:11:47.240Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60c8c11fb147f2053c5e6178"
+  },
+  "topics": [
+    "cantar",
+    "Origami"
+  ],
+  "name": {
+    "first": "Elisa",
+    "last": "Fernández Martín"
+  },
+  "birthday": {
+    "$date": "1989-01-25T00:00:00Z"
+  },
+  "email": "elisafm@gmail.com",
+  "gender": "female",
+  "createdAt": {
+    "$date": "2021-06-15T15:02:55.551Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-15T15:02:55.551Z"
+  },
+  "__v": 0
+}]

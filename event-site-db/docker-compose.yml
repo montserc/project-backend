@@ -9,6 +9,7 @@ services:
     ports:
       - 27017:27017
     volumes:
+      - ./json:/json
       - data:/data/db
 
 volumes:
